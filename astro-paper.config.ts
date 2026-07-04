@@ -2,44 +2,40 @@ import { defineAstroPaperConfig } from "./src/types/config";
 
 export default defineAstroPaperConfig({
   site: {
-    url: "https://astro-paper.pages.dev/",
-    title: "AstroPaper",
-    description: "A minimal, responsive and SEO-friendly Astro blog theme.",
-    author: "Sat Naing",
-    profile: "https://satna.ing",
+    url: "https://www.citytraveldreamer.com/",
+    title: "都市遊魂",
+    description: "躲在相機背後的安靜觀察者，用鏡頭記錄不擁擠的都會質感、品味角落與慢活旅居足跡。",
+    author: "都市遊魂",
+    profile: "https://www.citytraveldreamer.com/",
     ogImage: "default-og.jpg",
-    lang: "en",
-    timezone: "Asia/Bangkok",
+    lang: "zh-TW",
+    timezone: "Asia/Hong_Kong",
     dir: "ltr",
   },
   posts: {
-    perPage: 4,
+    perPage: 6, // 稍微拉高每頁文章數量，讓排版更豐富
     perIndex: 4,
     scheduledPostMargin: 15 * 60 * 1000,
   },
   features: {
     lightAndDarkMode: true,
-    dynamicOgImage: true,
+    dynamicOgImage: false, // 關閉英文的動態 OG 圖片生成，避免中文標題產生亂碼
     showArchives: true,
     showBackButton: true,
     editPost: {
-      enabled: true,
-      url: "https://github.com/satnaing/astro-paper/edit/main/",
+      enabled: false, // 關閉 GitHub 編輯按鈕，保持網站乾淨
+      url: "https://github.com/",
     },
     search: "pagefind",
   },
   socials: [
-    { name: "github",   url: "https://github.com/satnaing/astro-paper" },
-    { name: "x",        url: "https://x.com/username" },
-    { name: "linkedin", url: "https://www.linkedin.com/in/username/" },
-    { name: "mail",     url: "mailto:yourmail@gmail.com" },
+    { name: "mail", url: "mailto:yourmail@gmail.com" }, // 之後可以改成你的聯絡信箱
   ],
   shareLinks: [
     { name: "whatsapp", url: "https://wa.me/?text=" },
     { name: "facebook", url: "https://www.facebook.com/sharer.php?u=" },
     { name: "x",        url: "https://x.com/intent/post?url=" },
     { name: "telegram", url: "https://t.me/share/url?url=" },
-    { name: "pinterest", url: "https://pinterest.com/pin/create/button/?url=" },
     { name: "mail",     url: "mailto:?subject=See%20this%20post&body=" },
   ],
 });
