@@ -10,25 +10,25 @@
   --font-app: var(--font-google-sans-code);
 }
 
-/* Light theme values */
+/* Light theme values - 青木冷墨灰（淺色：清晨冷霧） */
 :root,
 [data-theme="light"] {
-  --background: #fdfdfd;
-  --foreground: #282728;
-  --accent: #006cac;
-  --accent-foreground: #ffffff;
-  --muted: #e6e6e6;
-  --muted-foreground: #6b7280;
-  --border: #ece9e9;
+  --background: #f4f6f8;          /* 輕盈的霧灰水泥背景 */
+  --foreground: #202632;          /* 深松墨文字色，比純黑更有層次 */
+  --accent: #0d9488;              /* 核心品味：日式深松石綠 */
+  --accent-foreground: #ffffff;   /* 重點色上的文字保持純白 */
+  --muted: #e5e9ec;               /* 次要區塊的淺灰色 */
+  --muted-foreground: #64748b;    /* 次要文字（如日期）的沉穩灰 */
+  --border: #e1e5e8;              /* 細緻的冷調邊框線 */
 }
 
-/* Dark theme values */
+/* Dark theme values - 青木冷墨灰（深色：午夜清水模） */
 [data-theme="dark"] {
-  --background: #212737;
-  --foreground: #eaedf3;
-  --accent: #ff6b01;
-  --accent-foreground: #ffffff;
-  --muted: #343f60;
-  --muted-foreground: #afb9ca;
-  --border: #ab4b08;
+  --background: #141820;          /* 現代東京深夜的冷調炭黑 */
+  --foreground: #e2e8f0;          /* 舒適不刺眼的霧銀白文字 */
+  --accent: #2dd4bf;              /* 點亮黑夜的極光松石綠（ManyChat 變現點擊王） */
+  --accent-foreground: #0f172a;   /* 在極光綠按鈕上的文字自動轉為深色，確保清晰度 */
+  --muted: #1e293b;               /* 深色模式下的次要區塊 */
+  --muted-foreground: #94a3b8;    /* 深色模式下的次要文字 */
+  --border: #2e3748;              /* 低調內斂的暗部邊框線 */
 }
