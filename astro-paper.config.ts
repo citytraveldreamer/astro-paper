@@ -11,7 +11,6 @@ export default defineAstroPaperConfig({
     lang: "zh-TW",
     timezone: "Asia/Hong_Kong",
     dir: "ltr",
-    locales: ["zh-TW", "en"], // 🌟 關鍵：在這裡直接登記許可的語言清單，破解新版 v6 的 MissingLocaleError！
   },
   posts: {
     perPage: 6,
