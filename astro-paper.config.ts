@@ -13,23 +13,22 @@ export default defineAstroPaperConfig({
     dir: "ltr",
   },
   posts: {
-    perPage: 6, // 稍微拉高每頁文章數量，讓排版更豐富
+    perPage: 6,
     perIndex: 4,
     scheduledPostMargin: 15 * 60 * 1000,
   },
   features: {
     lightAndDarkMode: true,
-    dynamicOgImage: false, // 關閉英文的動態 OG 圖片生成，避免中文標題產生亂碼
+    dynamicOgImage: false,
     showArchives: true,
     showBackButton: true,
     editPost: {
-      enabled: false, // 關閉 GitHub 編輯按鈕，保持網站乾淨
-      url: "https://github.com/",
+      enabled: false, // 當這裡設定為 false，底下就不能寫 url，這樣系統才不會報錯！
     },
     search: "pagefind",
   },
   socials: [
-    { name: "mail", url: "mailto:yourmail@gmail.com" }, // 之後可以改成你的聯絡信箱
+    { name: "mail", url: "mailto:yourmail@gmail.com" },
   ],
   shareLinks: [
     { name: "whatsapp", url: "https://wa.me/?text=" },
