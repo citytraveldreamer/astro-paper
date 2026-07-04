@@ -23,7 +23,7 @@ export default defineAstroPaperConfig({
     showArchives: true,
     showBackButton: true,
     editPost: {
-      enabled: false, // 當這裡設定為 false，底下就不能寫 url，這樣系統才不會報錯！
+      enabled: false,
     },
     search: "pagefind",
   },
