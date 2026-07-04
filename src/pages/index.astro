@@ -35,7 +35,7 @@ const homePath = getRelativeLocaleUrl(locale, "");
   >
     <section id="hero" class="border-border border-b pt-8 pb-6">
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        Mingalaba
+        都市遊魂
       </h1>
       <a
         target="_blank"
@@ -52,24 +52,17 @@ const homePath = getRelativeLocaleUrl(locale, "");
         <span class="sr-only">RSS Feed</span>
       </a>
 
-      <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
+      <p class="leading-relaxed">
+        我是一個安靜的觀察者，習慣躲在相機背後，用光影與構圖記錄世界。
+        在這裡，我將帶你避開喧囂的人潮，走進城市最寫實、也最安靜的靈魂隱處，
+        抽離出屬於都會品味的節奏，並分享慢活旅居的質感日常。
       </p>
-      <p class="mt-2">
-        Read the blog posts or check
-        <LinkButton
-          class="hover:text-accent underline decoration-dashed underline-offset-4"
-          href="https://github.com/satnaing/astro-paper#readme"
-        >
-          README
-        </LinkButton> for more info.
+      <p class="mt-4 text-sm opacity-85">
+        歡迎在 Instagram 留言互動，或是隨時點擊下方探索我的私藏美食、深度地圖攻略與午夜獨白。
       </p>
       {
         socials.length > 0 && (
-          <div class="mt-4 flex max-sm:flex-col sm:items-center">
+          <div class="mt-6 flex max-sm:flex-col sm:items-center">
             <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">
               {t.home.socialLinks}:
             </div>
