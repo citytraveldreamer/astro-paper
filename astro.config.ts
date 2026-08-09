@@ -36,8 +36,6 @@ export default defineConfig({
     },
   },
   markdown: {
-    headingLinks: false,
-    
     processor: unified({
       remarkPlugins: [
         remarkToc,
