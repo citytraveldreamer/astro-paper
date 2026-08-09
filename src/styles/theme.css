@@ -7,7 +7,8 @@
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
-  --font-app: var(--font-google-sans-code);
+/*  --font-app: var(--font-google-sans-code);*/
+  --font-app: "Noto Sans TC", system-ui, -apple-system, sans-serif;
 }
 
 /* Light theme values - 青木冷墨灰（淺色：清晨冷霧） */
