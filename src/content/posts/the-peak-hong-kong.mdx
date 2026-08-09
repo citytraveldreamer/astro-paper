@@ -129,42 +129,56 @@ import AffiliateCard from '../../components/AffiliateCard.astro';
 
 ### Photo Gallery (太平山遺落的風景)
 
-{/* 使用 Tailwind CSS 打造可左右滑動的相片軸，並使用 figure 與 figcaption 顯示圖說 */}
+{/* 使用 Tailwind CSS 打造可左右滑動的相片軸 */}
 
-<div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 mt-8 hide-scrollbar">
-  
+<div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 mt-8 hide-scrollbar [&_img]:w-full [&_img]:h-64 [&_img]:object-cover [&_img]:rounded-lg [&_img]:shadow-sm [&_img]:!m-0">
+
   <figure class="snap-center shrink-0 w-[85%] sm:w-72 m-0 flex flex-col">
-    <img src="./images/mount-austin-road-3.jpg" alt="巨樹氣根與古典街燈" class="w-full h-64 object-cover rounded-lg shadow-sm !m-0" />
+
+    ![巨樹氣根與古典街燈](./images/mount-austin-road-3.jpg)
+
     <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">巨樹氣根與古典街燈</figcaption>
   </figure>
 
   <figure class="snap-center shrink-0 w-[85%] sm:w-72 m-0 flex flex-col">
-    <img src="./images/victoria-peak-garden-6.jpg" alt="霧中的發射塔" class="w-full h-64 object-cover rounded-lg shadow-sm !m-0" />
+
+    ![霧中的發射塔](./images/victoria-peak-garden-6.jpg)
+
     <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">霧中的發射塔</figcaption>
   </figure>
 
   <figure class="snap-center shrink-0 w-[85%] sm:w-72 m-0 flex flex-col">
-    <img src="./images/lugard-road-10.jpg" alt="盧吉道生鏽街燈" class="w-full h-64 object-cover rounded-lg shadow-sm !m-0" />
+
+    ![盧吉道生鏽街燈](./images/lugard-road-10.jpg)
+
     <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">盧吉道生鏽街燈</figcaption>
   </figure>
 
   <figure class="snap-center shrink-0 w-[85%] sm:w-72 m-0 flex flex-col">
-    <img src="./images/lugard-road-15.jpg" alt="盧吉道斑駁路牌" class="w-full h-64 object-cover rounded-lg shadow-sm !m-0" />
+
+    ![盧吉道斑駁路牌](./images/lugard-road-15.jpg)
+
     <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">盧吉道斑駁路牌</figcaption>
   </figure>
 
   <figure class="snap-center shrink-0 w-[85%] sm:w-72 m-0 flex flex-col">
-    <img src="./images/victoria-harbour-12.jpg" alt="維港高樓特寫" class="w-full h-64 object-cover rounded-lg shadow-sm !m-0" />
+
+    ![維港高樓特寫](./images/victoria-harbour-12.jpg)
+
     <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">維港高樓特寫</figcaption>
   </figure>
 
   <figure class="snap-center shrink-0 w-[85%] sm:w-72 m-0 flex flex-col">
-    <img src="./images/barker-road-station-7.jpg" alt="白加道車站細節" class="w-full h-64 object-cover rounded-lg shadow-sm !m-0" />
+
+    ![白加道車站細節](./images/barker-road-station-7.jpg)
+
     <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">白加道車站細節</figcaption>
   </figure>
 
   <figure class="snap-center shrink-0 w-[85%] sm:w-72 m-0 flex flex-col">
-    <img src="./images/peak-lookout-8.jpg" alt="太平山餐廳室內" class="w-full h-64 object-cover rounded-lg shadow-sm !m-0" />
+
+    ![太平山餐廳室內](./images/peak-lookout-8.jpg)
+
     <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">太平山餐廳室內</figcaption>
   </figure>
 
