@@ -36,3 +36,14 @@
 :target {
   scroll-margin-block: 1rem;
 }
+
+/* Hide the clickable # after level-2 headings */
+.prose h2 a[href^="#"],
+article h2 a[href^="#"],
+.prose h2 a[href^="#"]::before,
+.prose h2 a[href^="#"]::after,
+article h2 a[href^="#"]::before,
+article h2 a[href^="#"]::after {
+  display: none !important;
+  content: none !important;
+}
