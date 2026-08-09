@@ -30,8 +30,8 @@ export default defineAstroPaperConfig({
   socials: [
     { name: "mail", url: "mailto:citytraveldreamer@gmail.com" },
     { name: "facebook", url: "https://www.facebook.com/citytraveldreamer" },
-    { name: "instagram", url: "https://www.instagram.com/citytraveldreamer" },
-    { name: "youtube", url: "https://www.youtube.com/@citytraveldreamer" },
+    { name: "Instagram", url: "https://www.instagram.com/citytraveldreamer" },
+    { name: "Youtube", url: "https://www.youtube.com/@citytraveldreamer" },
   ],
   shareLinks: [
     { name: "whatsapp", url: "https://wa.me/?text=" },
