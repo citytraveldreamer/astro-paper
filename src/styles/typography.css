@@ -93,6 +93,17 @@
     pre {
       @apply focus-visible:outline-accent focus-visible:border-transparent focus-visible:outline-2 focus-visible:outline-dashed;
     }
+
+    h2 a,
+    h3 a {
+      text-decoration: none;
+    }
+    h2 a::after,
+    h3 a::after {
+      content: none !important;
+      display: none !important;
+    }
+    
   }
 
   /* ===== Code Blocks & Syntax Highlighting ===== */
