@@ -1,24 +1,45 @@
 ---
-// src/components/AffiliateCard.astro
-const { title, description, link, buttonText, type } = Astro.props;
+export interface Props {
+  title: string;
+  description: string;
+  link: string;
+  buttonText: string;
+  type?: 'klook' | 'agoda' | 'general';
+}
 
+const { title, description, link, buttonText, type = 'general' } = Astro.props;
 ---
 
-<div class="my-8 flex flex-col sm:flex-row items-center border border-border bg-muted/30 rounded-lg p-5 hover:border-accent transition-colors duration-300">
-  <div class="flex-1">
-    <h4 class="text-foreground font-bold mt-0 mb-2">{title}</h4>
-    <p class="text-muted-foreground text-sm mb-0 sm:mb-0">
+<aside class="my-10 flex flex-col gap-4 border-y border-border py-6 sm:px-2 bg-transparent">
+  <div class="flex flex-col gap-2">
+    {/* 編輯推薦標籤 */}
+    <div class="flex items-center gap-1.5 text-xs font-bold tracking-widest text-accent uppercase">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+      </svg>
+      <span>Editor's Tip</span>
+    </div>
+    
+    {/* 標題與內文 */}
+    <h4 class="!m-0 text-lg font-bold text-foreground">{title}</h4>
+    <p class="!m-0 text-sm leading-relaxed text-foreground opacity-80">
       {description}
     </p>
   </div>
-  <div class="mt-4 sm:mt-0 sm:ml-6 w-full sm:w-auto">
-    <a 
-      href={link} 
-      target="_blank" 
+  
+  {/* 精緻化的外框按鈕 */}
+  <div class="mt-2">
+    <a
+      href={link}
+      target="_blank"
       rel="noopener noreferrer"
-      class="block w-full text-center bg-accent text-accent-foreground px-6 py-2.5 rounded hover:opacity-90 transition-opacity font-medium no-underline"
+      class="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full border border-accent px-6 py-2.5 text-sm font-medium text-accent transition-colors hover:bg-accent hover:text-white !no-underline"
     >
       {buttonText}
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
     </a>
   </div>
-</div>
+</aside>
