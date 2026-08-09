@@ -93,12 +93,6 @@
     pre {
       @apply focus-visible:outline-accent focus-visible:border-transparent focus-visible:outline-2 focus-visible:outline-dashed;
     }
-
-    .anchor-link,
-    .anchor-link::before,
-    .anchor-link::after {
-      display: none !important;
-    }
     
   }
 
