@@ -94,9 +94,9 @@
       @apply focus-visible:outline-accent focus-visible:border-transparent focus-visible:outline-2 focus-visible:outline-dashed;
     }
 
-    .app-prose :is(h1, h2, h3, h4, h5, h6) a[aria-hidden="true"],
-    .app-prose :is(h1, h2, h3, h4, h5, h6) a.heading-link,
-    .app-prose :is(h1, h2, h3, h4, h5, h6) a.icon-link {
+    .anchor-link,
+    .anchor-link::before,
+    .anchor-link::after {
       display: none !important;
     }
     
