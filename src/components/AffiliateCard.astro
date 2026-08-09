@@ -2,8 +2,6 @@
 // src/components/AffiliateCard.astro
 const { title, description, link, buttonText, type } = Astro.props;
 
-// 根據 type 顯示不同的 Icon (Klook 或 Agoda)
-const isKlook = type === 'klook';
 ---
 
 <div class="my-8 flex flex-col sm:flex-row items-center border border-border bg-muted/30 rounded-lg p-5 hover:border-accent transition-colors duration-300">
