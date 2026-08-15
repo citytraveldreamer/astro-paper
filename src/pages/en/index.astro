@@ -83,12 +83,12 @@ const homePath = "/en/";
           </h2>
           <ul>
             {featuredPosts.map(data => {
-              const cleanSlug = data.id.split("/").pop()?.replace(/\.mdx?$/, "");
+              const cleanSlug = data.id.split("/").pop()?.replace(/\.mdx?$/, "") ?? data.id;
               return (
                 <Card
                   variant="h3"
-                  href={`/en/posts/${cleanSlug}/`}
                   {...data}
+                  id={cleanSlug}
                 />
               );
             })}
@@ -105,12 +105,12 @@ const homePath = "/en/";
           </h2>
           <ul>
             {recentPosts.slice(0, postsConfig.perIndex).map(data => {
-              const cleanSlug = data.id.split("/").pop()?.replace(/\.mdx?$/, "");
+              const cleanSlug = data.id.split("/").pop()?.replace(/\.mdx?$/, "") ?? data.id;
               return (
                 <Card
                   variant="h3"
-                  href={`/en/posts/${cleanSlug}/`}
                   {...data}
+                  id={cleanSlug}
                 />
               );
             })}
