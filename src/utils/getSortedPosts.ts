@@ -10,6 +10,7 @@ import { postFilter } from "./postFilter";
 export function getSortedPosts(posts: CollectionEntry<"posts">[]) {
   return posts
     .filter(postFilter)
+    .filter(({ id }) => !id.startsWith("en/"))
     .sort(
       (a, b) =>
         Math.floor(
