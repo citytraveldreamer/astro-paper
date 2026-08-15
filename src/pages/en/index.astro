@@ -1,6 +1,5 @@
 ---
 import { getCollection } from "astro:content";
-import { getRelativeLocaleUrl } from "astro:i18n";
 import IconRss from "@/assets/icons/IconRss.svg";
 import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 import Layout from "@/layouts/Layout.astro";
@@ -22,7 +21,7 @@ const posts = await getCollection("posts");
 const sortedPosts = getSortedEnglishPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
-const homePath = getRelativeLocaleUrl(locale, "");
+const homePath = "/en/";
 ---
 
 <Layout>
@@ -109,7 +108,7 @@ const homePath = getRelativeLocaleUrl(locale, "");
     }
 
     <div class="my-8 text-center">
-      <LinkButton href={getRelativeLocaleUrl(locale, "posts")}>
+      <LinkButton href="/en/posts/">
         {t.home.allPosts}
         <IconArrowRight class="inline-block rtl:-rotate-180" />
       </LinkButton>
