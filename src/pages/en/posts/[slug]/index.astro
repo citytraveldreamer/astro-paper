@@ -19,11 +19,11 @@ import config from "@/config";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts");
-  const sortedPosts = getSortedEnglishPosts(posts); 
+  const sortedPosts = getSortedEnglishPosts(posts);
 
   return sortedPosts.map((post, index) => {
     const rawSlug = getPostSlug(post.id, post.filePath);
-    const cleanSlug = rawSlug.replace(/^en\//, "");
+    const cleanSlug = rawSlug.replace(/^(zh|en)\//, "");
 
     return {
       params: { slug: cleanSlug },
