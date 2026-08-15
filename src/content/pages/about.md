@@ -1,37 +1,24 @@
 ---
-title: "About"
-description: "A bit about me and this blog."
+title: "關於我"
+description: "關於都市遊魂"
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+你好，我是「都市遊魂」。
 
-![Astro Paper](@/assets/images/astropaper-og.jpg)
+我是一名自由內容創作者 (Freelance Content Creator)。這裡記錄著我的足跡，內容以旅行為主，偶爾也會穿插一些關於 Lifestyle 與飲食的日常點滴。
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+### 為什麼叫「都市遊魂」？
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+我喜歡旅行，特別喜歡在不同的城市裡漫無目的地遊走。邊走邊思考，邊走邊做夢。
 
-## Features
+在廣東話裡，「遊魂」跟「遊雲」同音，意思是腦海不知飄到了哪裡去——這正是我在城市穿梭時最真實的狀態。不趕行程，隨心所至，讓思緒跟著腳步一起在陌生的街道上流浪。
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+### 關於攝影與日常
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
+我習慣帶著我的 Sony 相機，穿梭在大街小巷。我特別偏愛 Street Snapshot（街頭隨拍），不刻意擺拍，而是靜靜地捕捉日常生活的真實片段。對我來說，那些看似平凡的微小瞬間，往往藏著一座城市最動人的靈魂。
 
-and so much more.
+### 想對你說的話
 
-## Show your support
+建立這個網站，不僅僅是為了記錄，更希望來到這裡的你，能在閱讀這些文字與照片後，帶走一些有意思的得著與共鳴。或許是一個旅行的靈感，或許是面對生活的一點新想法。
 
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
-
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
-
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
-
-Kyay zuu! 🙏🏼
+歡迎來到我的小天地。如果你也喜歡這樣的生活節奏，歡迎在 [Instagram](https://www.instagram.com/citytraveldreamer) 上與我交流，一起在城市中「遊雲」。
