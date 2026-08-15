@@ -29,7 +29,7 @@ export default defineConfig({
     }),
   ],
   i18n: {
-    locales: ["zh-HK"],
+    locales: ["zh-HK", "en"],
     defaultLocale: "zh-HK",
     routing: {
       prefixDefaultLocale: false,
