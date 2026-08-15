@@ -10,11 +10,11 @@ import { getSortedEnglishPosts } from "@/utils/getSortedEnglishPosts";
 import { slugifyStr } from "@/utils/slugify";
 import { toTransitionName } from "@/utils/toTransitionName";
 
-import EditPost from "@/pages/posts/[slug]/_components/EditPost.astro";
-import ShareLinks from "@/pages/posts/[slug]/_components/ShareLinks.astro";
-import BackButton from "@/pages/posts/[slug]/_components/BackButton.astro";
-import BackToTopButton from "@/pages/posts/[slug]/_components/BackToTopButton.astro";
-import AdjacentPostNav from "@/pages/posts/[slug]/_components/AdjacentPostNav.astro";
+import EditPost from "./_components/EditPost.astro";
+import ShareLinks from "./_components/ShareLinks.astro";
+import BackButton from "./_components/BackButton.astro";
+import BackToTopButton from "./_components/BackToTopButton.astro";
+import AdjacentPostNav from "./_components/AdjacentPostNav.astro";
 import config from "@/config";
 
 export async function getStaticPaths() {
