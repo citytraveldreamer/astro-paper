@@ -7,14 +7,9 @@ import Main from "@/components/Main.astro";
 import Footer from "@/components/Footer.astro";
 import config from "@/config";
 
-// 指向英文版的 Markdown 檔案
+// 讀取 src/content/pages/about-en.md
 const about = await getEntry("pages", "about-en");
-
-if (!about) {
-  throw new Error(
-    "Missing content entry: `about-en.md` or `about-en.mdx` in `src/content/pages/`"
-  );
-}
+if (!about) throw new Error("Missing content entry: about-en.md");
 
 const { Content } = await render(about);
 ---

@@ -7,13 +7,9 @@ import Main from "@/components/Main.astro";
 import Footer from "@/components/Footer.astro";
 import config from "@/config";
 
+// 讀取 src/content/pages/about.md
 const about = await getEntry("pages", "about");
-
-if (!about) {
-  throw new Error(
-    "Missing content entry: `about.md` or `about.mdx` in `src/content/pages/`"
-  );
-}
+if (!about) throw new Error("Missing content entry: about.md");
 
 const { Content } = await render(about);
 ---
