@@ -23,7 +23,7 @@ export async function getStaticPaths() {
 
   return sortedPosts.map((post, index) => {
     const rawSlug = getPostSlug(post.id, post.filePath);
-    const cleanSlug = rawSlug.replace(/^(zh|en)\//, "");
+    const cleanSlug = rawSlug.split("/").pop();
 
     return {
       params: { slug: cleanSlug },
