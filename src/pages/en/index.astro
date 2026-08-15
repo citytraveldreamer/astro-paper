@@ -24,7 +24,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 const homePath = "/en/";
 ---
 
-<Layout>
+<Layout title="City Travel Dreamer">
   <Header />
   <main
     id="main-content"
@@ -34,7 +34,7 @@ const homePath = "/en/";
   >
     <section id="hero" class="border-border border-b pt-8 pb-6">
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        都市遊魂
+        City Travel Dreamer
       </h1>
       <a
         target="_blank"
@@ -52,12 +52,10 @@ const homePath = "/en/";
       </a>
 
       <p class="leading-relaxed">
-        我是一個安靜的觀察者，習慣躲在相機背後，用光影與構圖記錄世界。
-        在這裡，我將帶你避開喧囂的人潮，走進城市最寫實、也最安靜的靈魂隱處，
-        抽離出屬於都會品味的節奏，並分享慢活旅居的質感日常。
+        I am a quiet observer, accustomed to staying behind the lens to capture the world through light and shadow. Here, I invite you to step away from the crowd and discover the authentic, quiet soul of the city, embracing a refined urban pace and slow-living stories.
       </p>
       <p class="mt-4 text-sm opacity-85">
-        歡迎在 Instagram 留言互動，或是隨時點擊下方探索我的私藏美食、深度地圖攻略與午夜獨白。
+        Feel free to connect on Instagram, or click below to explore my curated guides, food recommendations, and travel logs.
       </p>
       {
         socials.length > 0 && (
@@ -84,9 +82,16 @@ const homePath = "/en/";
             {t.home.featured}
           </h2>
           <ul>
-            {featuredPosts.map(data => (
-              <Card variant="h3" {...data} />
-            ))}
+            {featuredPosts.map(data => {
+              const cleanSlug = data.id.split("/").pop()?.replace(/\.mdx?$/, "");
+              return (
+                <Card
+                  variant="h3"
+                  href={`/en/posts/${cleanSlug}/`}
+                  {...data}
+                />
+              );
+            })}
           </ul>
         </section>
       )
@@ -99,9 +104,16 @@ const homePath = "/en/";
             {t.home.recentPosts}
           </h2>
           <ul>
-            {recentPosts.slice(0, postsConfig.perIndex).map(data => (
-              <Card variant="h3" {...data} />
-            ))}
+            {recentPosts.slice(0, postsConfig.perIndex).map(data => {
+              const cleanSlug = data.id.split("/").pop()?.replace(/\.mdx?$/, "");
+              return (
+                <Card
+                  variant="h3"
+                  href={`/en/posts/${cleanSlug}/`}
+                  {...data}
+                />
+              );
+            })}
           </ul>
         </section>
       )
