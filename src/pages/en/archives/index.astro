@@ -8,10 +8,12 @@ import Main from "@/components/Main.astro";
 import Footer from "@/components/Footer.astro";
 import Card from "@/components/Card.astro";
 import { postFilter } from "@/utils/postFilter";
-import { getPostsByGroupCondition } from "./_utils/getPostsByGroupCondition";
+// 👈 修改為別名路徑，準確指向原有的 _utils 資料夾
+import { getPostsByGroupCondition } from "@/pages/archives/_utils/getPostsByGroupCondition";
 import { useTranslations } from "@/i18n";
 import config from "@/config";
 
+// 強制指定為英文語系
 const locale = "en";
 
 // Redirect to 404 page if `showArchives` config is false
@@ -23,6 +25,7 @@ if (!config.features.showArchives && notFoundUrl) {
 const t = useTranslations(locale);
 
 const posts = await getCollection("posts");
+// 只抓取 en/ 資料夾底下的文章
 const filteredPosts = posts.filter(post => postFilter(post) && post.id.startsWith("en/"));
 const monthFormatter = new Intl.DateTimeFormat(locale, { month: "long" });
 ---
