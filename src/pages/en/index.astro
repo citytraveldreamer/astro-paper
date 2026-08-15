@@ -15,8 +15,8 @@ import config from "@/config";
 
 const { socials, posts: postsConfig } = config;
 
-const locale = Astro.currentLocale ?? config.site.lang;
 const locale = "en";
+const t = useTranslations(locale);
 
 const posts = await getCollection("posts");
 const sortedPosts = getSortedEnglishPosts(posts);
