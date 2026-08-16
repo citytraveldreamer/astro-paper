@@ -31,12 +31,19 @@ const cloudflareRedirects = () => ({
         "# ==========================================",
         "# 🔗 Affiliate Short Links (集中管理區)",
         "# ==========================================",
+        
         "# --- GetYourGuide ---",
         "/go/peak-tram-gyg  https://www.getyourguide.com/hong-kong-l174/hongkongpeak-tram-sky-terrace-428-t1340994/?partner_id=13UDXJC&utm_medium=online_publisher&cmp=blog-the-peak-en  302",
+        
         "# --- Amazon Peak Design Clip (Blog) ---",
-        "/go/peak-design-clip  https://www.amazon.com/Peak-Design-Capture-Camera-Black/dp/B07818LB9D?th=1&gaOptInStatus=true&linkCode=ll2&tag=blog-en-20&linkId=cd724f99d050832ec957b102161276a4&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl  302",
+        "/go/peak-design-clip  https://www.amazon.com/dp/B07818LB9D?tag=ctd-blog-en-20&linkCode=osi&th=1&psc=1  302",
         "# --- Amazon Peak Design Clip (YouTube) ---",
-        "/yt/peak-design-clip  https://www.amazon.com/Peak-Design-Capture-Camera-Black/dp/B07818LB9D?th=1&gaOptInStatus=true&linkCode=ll2&tag=ctd-yt-20&linkId=c7090fce825330234c2060eec48a524e&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl  302",
+        "/yt/peak-design-clip  https://www.amazon.com/dp/B07818LB9D?tag=ctd-youtube-20&linkCode=osi&th=1&psc=1  302",
+
+        "# --- Airalo eSIM (Blog) ---",
+        "/go/airalo-hk  https://tp.media/r?campaign_id=541&marker=219253&p=8310&sub_id=blog-en&trs=283003&u=https%3A%2F%2Fwww.airalo.com%2Fhong-kong-esim  302",
+        "# --- Airalo eSIM (YouTube) ---",
+        "/yt/airalo-hk  https://tp.media/r?campaign_id=541&marker=219253&p=8310&sub_id=youtube&trs=283003&u=https%3A%2F%2Fwww.airalo.com%2Fhong-kong-esim  302",
       ];
       const dest = path.join(fileURLToPath(dir), "_redirects");
       await fs.promises.writeFile(dest, rules.join("\n") + "\n");
