@@ -1,9 +1,9 @@
 ---
 title: "About Me"
-description: "About City Travel Dreamer"
+description: "About The Flâneur"
 ---
 
-Hello, I am the *City Travel Dreamer* (都市遊魂).
+Hello, I am the *The Flâneur* (都市遊魂).
 
 I am a freelance content creator. My work here primarily focuses on travel, intertwined with moments of lifestyle and food discoveries.
 
