@@ -20,7 +20,7 @@ const t = useTranslations(locale);
 const { pathname } = Astro.url;
 const isEn = pathname.startsWith("/en/") || pathname === "/en";
 const basePath = isEn ? "/en" : "";
-const siteTitle = isEn ? "City Travel Dreamer" : site.title;
+const siteTitle = isEn ? "The Flâneur" : site.title;
 
 const navText = {
   posts: isEn ? "Posts" : "文章",
