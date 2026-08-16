@@ -36,6 +36,7 @@ export default defineConfig({
     },
   },
   markdown: {
+    smartypants: false,
     processor: unified({
       remarkPlugins: [
         remarkToc,
