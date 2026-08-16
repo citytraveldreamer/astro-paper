@@ -1,3 +1,6 @@
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import {
   defineConfig,
   envField,
@@ -19,6 +22,24 @@ import {
 import { transformerFileName } from "./src/utils/transformers/fileName";
 import config from "./astro-paper.config";
 
+// 💡 自動為 Cloudflare Pages 生成 _redirects 檔（零延遲原生轉跳）
+const cloudflareRedirects = () => ({
+  name: "cloudflare-redirects",
+  hooks: {
+    "astro:build:done": async ({ dir }: { dir: URL }) => {
+      const rules = [
+        "# Affiliate Short Links (集中管理區)",
+        "/go/peak-tram-gyg  https://www.getyourguide.com/hong-kong-l174/hongkongpeak-tram-sky-terrace-428-t1340994/?partner_id=13UDXJC&utm_medium=online_publisher&cmp=blog-the-peak-en  302",
+        
+        // 未來有新的短網址，直接在下面加一行即可：
+        // "/go/airalo-hk  https://...  302",
+      ];
+      const dest = path.join(fileURLToPath(dir), "_redirects");
+      await fs.promises.writeFile(dest, rules.join("\n") + "\n");
+    },
+  },
+});
+
 export default defineConfig({
   site: config.site.url,
   integrations: [
@@ -27,6 +48,7 @@ export default defineConfig({
       filter: page =>
         config.features?.showArchives !== false || !page.endsWith("/archives/"),
     }),
+    cloudflareRedirects(), // 👈 載入自動生成器
   ],
   i18n: {
     locales: ["zh-HK", "en"],
@@ -35,10 +57,9 @@ export default defineConfig({
       prefixDefaultLocale: false,
     },
   },
-
   markdown: {
-    smartypants: false,
     processor: unified({
+      smartypants: false, // 👈 移入 processor 解決 Deprecation 警告
       remarkPlugins: [
         remarkToc,
         [remarkCollapse, { test: "Table of contents" }],
