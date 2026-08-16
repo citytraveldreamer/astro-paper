@@ -44,6 +44,11 @@ const cloudflareRedirects = () => ({
         "/go/airalo-hk  https://tp.media/r?campaign_id=541&marker=219253&p=8310&sub_id=blog-en&trs=283003&u=https%3A%2F%2Fwww.airalo.com%2Fhong-kong-esim  302",
         "# --- Airalo eSIM (YouTube) ---",
         "/yt/airalo-hk  https://tp.media/r?campaign_id=541&marker=219253&p=8310&sub_id=youtube&trs=283003&u=https%3A%2F%2Fwww.airalo.com%2Fhong-kong-esim  302",
+
+        "# --- Booking.com: The Murray ---",
+        "/go/murray-hotel-en  https://tp.media/r?campaign_id=84&marker=219253&p=2076&sub_id=blog-en&trs=283003&u=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fhk%2Fthe-murray-hong-kong-a-niccolo.html  302",
+        "/go/murray-hotel-zh  https://tp.media/r?campaign_id=84&marker=219253&p=2076&sub_id=blog-zh&trs=283003&u=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fhk%2Fthe-murray-hong-kong-a-niccolo.html  302",
+        "/yt/murray-hotel  https://tp.media/r?campaign_id=84&marker=219253&p=2076&sub_id=youtube&trs=283003&u=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fhk%2Fthe-murray-hong-kong-a-niccolo.html  302",
       ];
       const dest = path.join(fileURLToPath(dir), "_redirects");
       await fs.promises.writeFile(dest, rules.join("\n") + "\n");
