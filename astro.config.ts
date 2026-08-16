@@ -35,20 +35,6 @@ export default defineConfig({
       prefixDefaultLocale: false,
     },
   },
-  
-  // 👇 加入 redirects 區塊，集中管理你的 Affiliate 短連結
-  redirects: {
-    // ==========================================
-    // 🔗 Affiliate Short URLs (集中管理區)
-    // 命名規則: /go/產品名稱-平台
-    // ==========================================
-
-    // --- 香港區文章 ---
-    "/go/peak-tram-gyg": "https://www.getyourguide.com/hong-kong-l174/hongkongpeak-tram-sky-terrace-428-t1340994/?partner_id=13UDXJC&utm_medium=online_publisher&cmp=blog-the-peak-en",
-    
-    // 你可以隨時在這裡繼續往下加，例如：
-    // "/go/airalo-hk": "https://...",
-  },
 
   markdown: {
     smartypants: false,
