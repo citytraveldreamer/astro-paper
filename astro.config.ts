@@ -28,18 +28,15 @@ const cloudflareRedirects = () => ({
   hooks: {
     "astro:build:done": async ({ dir }: { dir: URL }) => {
       const rules = [
-        "# Affiliate Short Links (集中管理區)",
+        "# ==========================================",
+        "# 🔗 Affiliate Short Links (集中管理區)",
+        "# ==========================================",
+        "# --- GetYourGuide ---",
         "/go/peak-tram-gyg  https://www.getyourguide.com/hong-kong-l174/hongkongpeak-tram-sky-terrace-428-t1340994/?partner_id=13UDXJC&utm_medium=online_publisher&cmp=blog-the-peak-en  302",
-	"# --- Amazon (攝影器材) ---",
-        "# 1. 英文 Blog 專用 (綁定 blog tracking ID)",
-        "/go/peak-design-clip  https://www.amazon.com/Peak-Design-Capture-Camera-Black/dp/B07818LB9D?th=1&linkCode=ll2&tag=blog-en-20&linkId=ec6bfe2896fe60d96c52633a2bc58ea8&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl  302",
-        
-        "# 2. YouTube 專用 (綁定 youtube tracking ID)",
-        "/yt/peak-design-clip  https://www.amazon.com/Peak-Design-Capture-Camera-Black/dp/B07818LB9D?th=1&linkCode=ll2&tag=ctd-yt-20&linkId=3c8689e4d6b934801e19a9f0028d1555&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl  302",
-      ];
-        
-        // 未來有新的短網址，直接在下面加一行即可：
-        // "/go/airalo-hk  https://...  302",
+        "# --- Amazon Peak Design Clip (Blog) ---",
+        "/go/peak-design-clip  https://www.amazon.com/Peak-Design-Capture-Camera-Black/dp/B07818LB9D?th=1&gaOptInStatus=true&linkCode=ll2&tag=blog-en-20&linkId=cd724f99d050832ec957b102161276a4&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl  302",
+        "# --- Amazon Peak Design Clip (YouTube) ---",
+        "/yt/peak-design-clip  https://www.amazon.com/Peak-Design-Capture-Camera-Black/dp/B07818LB9D?th=1&gaOptInStatus=true&linkCode=ll2&tag=ctd-yt-20&linkId=c7090fce825330234c2060eec48a524e&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl  302",
       ];
       const dest = path.join(fileURLToPath(dir), "_redirects");
       await fs.promises.writeFile(dest, rules.join("\n") + "\n");
@@ -55,7 +52,7 @@ export default defineConfig({
       filter: page =>
         config.features?.showArchives !== false || !page.endsWith("/archives/"),
     }),
-    cloudflareRedirects(), // 👈 載入自動生成器
+    cloudflareRedirects(),
   ],
   i18n: {
     locales: ["zh-HK", "en"],
@@ -66,7 +63,7 @@ export default defineConfig({
   },
   markdown: {
     processor: unified({
-      smartypants: false, // 👈 移入 processor 解決 Deprecation 警告
+      smartypants: false,
       remarkPlugins: [
         remarkToc,
         [remarkCollapse, { test: "Table of contents" }],
