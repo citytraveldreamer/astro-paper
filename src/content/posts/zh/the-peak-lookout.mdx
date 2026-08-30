@@ -15,11 +15,12 @@ import AffiliateCard from '@/components/AffiliateCard.astro';
 
 這裡沒有倒模般的連鎖餐廳氛圍，取而代之的是粗獷的石牆、浪漫的玻璃天幕，以及彷彿能走進老電影場景的古典氣息。這不只是一頓晚餐，更是一場穿梭於香港百年歷史與異國情調的時光旅行。
 
+{/* Affiliate 1: 解決上山交通痛點 (Target: 港台客極依賴 Klook) */}
 <AffiliateCard 
   type="klook"
   title="山頂纜車特快套票 (建議提前預訂)" 
   description="想擁有最完美的約會體驗？強烈建議提前預訂纜車特快套票，省下排隊時間，將心情與體力留給接下來的百年浪漫晚餐。" 
-  link="https://affiliate.klook.com/placeholder-peak-tram-ticket" 
+  link="/go/klook-tram" 
   buttonText="查看 Klook 專屬優惠" 
 />
 
@@ -36,14 +37,6 @@ import AffiliateCard from '@/components/AffiliateCard.astro';
 ![早年太平山頂的珍貴舊照片](../images/the-peak-lookout/old-pictures.jpg)
 
 二戰期間，它曾短暫被日軍徵用為警署，戰後的 1947 年才正式搖身一變成為露天咖啡座「Old Peak Café」。這座曾經是底層勞工揮灑汗水的避風港，如今已被 Epicurean 集團打造成主打「East meets West」的高級國際菜餐廳，更成為了幾代香港人口耳相傳的「拍拖聖地」。
-
-<AffiliateCard 
-  type="agoda"
-  title="The Murray, Hong Kong (美利酒店)" 
-  description="想延續這份殖民時期的優雅浪漫？位於中環山腳、同樣由歷史建築活化改建的 The Murray 酒店，是完美約會假期的最佳下榻選擇。" 
-  link="https://www.agoda.com/placeholder-the-murray-hk" 
-  buttonText="查看 Agoda 最新房價" 
-/>
 
 ## 電影感滿溢的空間：玻璃天幕與百年古榕
 
@@ -89,14 +82,6 @@ The Peak Lookout 不僅吃環境，其「East meets West」的菜單同樣令人
 
 ![份量十足的煙燻燒烤拼盤](../images/the-peak-lookout/platter-3.jpg)
 
-<AffiliateCard 
-  type="klook"
-  title="香港人氣餐廳美食餐飲券" 
-  description="探索更多香港高質素的約會餐廳與米芝蓮推介？預先購買餐飲券，享受高達 7 折的美食體驗，讓你的味蕾之旅更划算。" 
-  link="https://affiliate.klook.com/placeholder-hk-dining-vouchers" 
-  buttonText="發掘更多香港必吃美食" 
-/>
-
 ### 4. 太平山牛肉漢堡 (The Peak Lookout Burger)
 
 看似普通的美式漢堡，卻是我吃過「最舒服、最合胃口」的驚喜之作。橫切面完美展示了那塊極度厚實、熟度剛好透著粉紅的美國牛肉漢堡扒，肉汁完全被鎖在鬆軟的麵包內。
@@ -113,12 +98,22 @@ The Peak Lookout 不僅吃環境，其「East meets West」的菜單同樣令人
 
 下次來到太平山頂，別急著跟隨人潮擠進觀景台。給自己留一個傍晚的時間，走進這座百年石屋，在星光與微霧下，享受一頓專屬於你的浪漫晚餐吧。
 
+{/* Affiliate 2: 解決看完食評後的延伸住宿需求 (Target: 港台客 Staycation 或住宿) */}
 <AffiliateCard 
-  type="general"
-  title="出發前準備：旅遊保險比較平台" 
-  description="無論是本地深度遊還是出國旅行，一份好的旅遊意外保險都能讓你玩得更安心。點擊比較各大保險公司的最新優惠與覆蓋範圍。" 
-  link="https://www.placeholder-travel-insurance-compare.com" 
-  buttonText="立即比較旅遊保險" 
+  type="agoda"
+  title="延續浪漫假期：The Murray, Hong Kong (美利酒店)" 
+  description="想延續這份殖民時期的優雅浪漫？位於中環山腳、同樣由歷史建築活化改建的 The Murray 酒店，是完美約會 / 假期的最佳下榻選擇。" 
+  link="/go/murray-hotel-agoda" 
+  buttonText="查看 Agoda 最新房價" 
+/>
+
+{/* Affiliate 3: 解決台灣客打卡剛需，順帶引出相片集 */}
+<AffiliateCard 
+  type="klook"
+  title="打卡必備：香港無限數據 eSIM" 
+  description="上到山頂想即時喺 IG 分享靚景？準備定一張無限數據 eSIM，免去換卡煩惱，落地即插即用，隨時隨地 Keep 住上線。" 
+  link="/go/klook-esim-hk" 
+  buttonText="即睇 Klook eSIM 優惠" 
 />
 
 ---
