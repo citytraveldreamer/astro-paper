@@ -1,0 +1,65 @@
+---
+export interface Props {
+  name: string;
+  address: string;
+  hours: string;
+  googleMapLink?: string;
+  igLink?: string;
+  igHandle?: string;
+}
+
+const { 
+  name, 
+  address, 
+  hours, 
+  googleMapLink, 
+  igLink, 
+  igHandle 
+} = Astro.props;
+---
+
+<div class="my-8 flex flex-col gap-3 rounded-r-md border-l-4 border-accent bg-accent/5 p-5 sm:px-6 shadow-sm">
+  {/* 標題區塊 */}
+  <div class="flex items-center gap-2 text-lg font-bold text-accent">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+      <circle cx="12" cy="10" r="3"></circle>
+    </svg>
+    {name} 餐廳資訊
+  </div>
+  
+  {/* 資訊內容區塊 */}
+  <div class="mt-2 space-y-2 text-base text-foreground">
+    <p><strong class="font-semibold">📍 地址：</strong>{address}</p>
+    <p><strong class="font-semibold">⏰ 營業時間：</strong>{hours}</p>
+    
+    {/* 連結按鈕區塊 (只有當傳入 link 時才會渲染) */}
+    {(googleMapLink || igLink) && (
+      <div class="flex flex-wrap gap-4 pt-2">
+        {googleMapLink && (
+          <a href={googleMapLink} target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-1 text-sm font-medium text-accent transition-colors hover:text-accent/80 !no-underline">
+            <span class="underline decoration-accent/40 decoration-dashed underline-offset-4 transition-colors group-hover:decoration-accent/80">
+              Google Map 路線導航
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:translate-x-1">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>
+        )}
+        
+        {igLink && (
+          <a href={igLink} target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-1 text-sm font-medium text-accent transition-colors hover:text-accent/80 !no-underline">
+            <span class="underline decoration-accent/40 decoration-dashed underline-offset-4 transition-colors group-hover:decoration-accent/80">
+              追蹤官方 Instagram {igHandle && `(${igHandle})`}
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:translate-x-1">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>
+        )}
+      </div>
+    )}
+  </div>
+</div>
