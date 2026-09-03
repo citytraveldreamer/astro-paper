@@ -39,7 +39,6 @@ import RestaurantInfoCard from '@/components/RestaurantInfoCard.astro';
 
 他知難而行，不隨波逐流做大眾口味，反而特地從泰國空運許多香港極罕見的在地食材。翻開像復古家庭相簿一樣的菜單、看著他親自去泰國挑選的一碗一碟，你能深刻感受到他想把泰式家常溫度原汁原味帶到香港的用心。
 
-{/* 餐廳資訊專屬卡片 (運用現有 Tailwind CSS 主題樣式) */}
 <RestaurantInfoCard 
   name="泰公館 Phaya Asura"
   address="九龍城啟德承啟道 38-39 號啟德體育園美食海灣地下 DC-005 號舖"
@@ -67,6 +66,10 @@ import RestaurantInfoCard from '@/components/RestaurantInfoCard.astro';
 
   ![香蕉花沙律](../images/phaya-asura/banana-blossom-salad.jpg)
 
+  ![農夫椰芯](../images/phaya-asura/coconut-shoots.jpg)
+
+  ![蝦膏蓮藕莖](../images/phaya-asura/lotus-stems.jpg)
+
 </div>
 
 ### 🥘 驚艷主菜：火候與香料的完美碰撞
@@ -86,12 +89,24 @@ import RestaurantInfoCard from '@/components/RestaurantInfoCard.astro';
 
   ![羅望子筍殼魚](../images/phaya-asura/crispy-marble-goby.jpg)
 
+  ![白豆蔻爆炒牛肉特寫](../images/phaya-asura/stir-fried-beef-cardamom.jpg)
+
+  ![泰式燒澳洲 A5 和牛](../images/phaya-asura/grilled-wagyu-beef.jpg)
+
 </div>
 
 ### 🍜 湯品與主食：層次豐富的味覺結尾
 
 *   **撚盡湯 (Ranjuan Soup)**：湯名意為「令人魂牽夢縈的香氣」，是拉瑪五世皇時期的宮廷名菜。以泰國蝦醬、香茅、南薑等熬煮，湯底清澈但色澤深沉，排骨燉得極軟嫩。入口鹹香酸辣，草本香氣久久不散，風味深度令人忘卻冬蔭功。
 *   **泰式乾炒酸辣壽喜燒 & 欖角炒飯**：壽喜燒配上大蝦與魷魚炒得乾身惹味；而欖角炒飯則擺盤豐富，面層鋪滿脆口肉鬆，是極具人氣的飽肚之選。
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 [&_img]:rounded-lg [&_img]:shadow-sm [&_img]:!m-0">
+
+  ![湯底色澤深沉、排骨軟嫩的撚盡湯](../images/phaya-asura/ranjuan-soup.jpg)
+
+  ![炒得乾身惹味的泰式乾炒酸辣壽喜燒](../images/phaya-asura/thai-dry-suki.jpg)
+
+</div>
 
 ### 🍨 甜品：傳統與創新的甜蜜交響
 
@@ -110,11 +125,13 @@ import RestaurantInfoCard from '@/components/RestaurantInfoCard.astro';
 *   **冬蔭公 (冬薩公) 凍湯 Cocktail**：顛覆視覺之作！酒體完全澄清透明，配上發光杯墊，入口卻真實帶有冬蔭功的酸辣鹹香，火候控制得恰到好處，是非常有趣的刺激體驗。
 *   **泰式奶茶 Cocktail**：將經典泰國國民飲品化身微醺版本，頂層覆蓋綿密奶泡，茶香與酒感的平衡拿捏得極好。
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 [&_img]:rounded-lg [&_img]:shadow-sm [&_img]:!m-0">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-6 [&_img]:rounded-lg [&_img]:shadow-sm [&_img]:!m-0 [&_img]:object-cover [&_img]:h-full [&_img]:aspect-[4/5]">
 
   ![Mali kiss 雞尾酒](../images/phaya-asura/mali-kiss-cocktail.jpg)
 
   ![冬蔭公凍湯 Cocktail](../images/phaya-asura/tom-yum-cocktail.jpg)
+
+  ![綿密奶泡的泰式奶茶 Cocktail](../images/phaya-asura/thai-milk-tea-cocktail.jpg)
 
 </div>
 
@@ -163,11 +180,6 @@ import RestaurantInfoCard from '@/components/RestaurantInfoCard.astro';
   <figure class="snap-center shrink-0 w-[90%] sm:w-80 m-0 flex flex-col">
     ![金黃酥脆的炸香蕉花](../images/phaya-asura/fried-banana-blossom.jpg)
     <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">金黃酥脆的炸香蕉花</figcaption>
-  </figure>
-
-  <figure class="snap-center shrink-0 w-[90%] sm:w-80 m-0 flex flex-col">
-    ![白豆蔻爆炒牛肉特寫](../images/phaya-asura/stir-fried-beef-cardamom.jpg)
-    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">鑊氣十足的白豆蔻爆炒牛肉</figcaption>
   </figure>
 
   <figure class="snap-center shrink-0 w-[90%] sm:w-80 m-0 flex flex-col">
