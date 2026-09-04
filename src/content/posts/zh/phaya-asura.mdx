@@ -60,16 +60,24 @@ import RestaurantInfoCard from '@/components/RestaurantInfoCard.astro';
 *   **香蕉花沙律 & 炸香蕉花**：香蕉花在香港極其罕見，處理工序繁複，具清熱解毒功效。餐廳將新鮮花瓣切成幼絲，搭配大隻彈牙的虎蝦與荔枝，淋上酸辣醬汁，爽脆開胃。另一種做法則是裹上薄漿酥炸，外脆內嫩，非常惹味。
 *   **農夫椰芯 & 蝦膏蓮藕莖**：這兩道是絕對的「白飯殺手」！取自椰樹頂端的農夫椰芯，質地如幼筍般爽脆無渣，帶天然椰香；中空的蓮藕莖則大火爆炒，瞬間吸飽濃郁的泰式蝦膏與辣椒醬，鹹香微辣，極具鑊氣。
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 [&_img]:rounded-lg [&_img]:shadow-sm [&_img]:!m-0">
-
-  ![蟹肉黑金杯特寫](../images/phaya-asura/crab-delight-close-up.jpg)
-
-  ![香蕉花沙律](../images/phaya-asura/banana-blossom-salad.jpg)
-
-  ![農夫椰芯](../images/phaya-asura/coconut-shoots.jpg)
-
-  ![蝦膏蓮藕莖](../images/phaya-asura/lotus-stems.jpg)
-
+{/* 橫向滑動圖片庫 - 前菜 */}
+<div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 my-6 hide-scrollbar [&_img]:w-full [&_img]:h-auto [&_img]:rounded-lg [&_img]:shadow-sm [&_img]:!m-0 [&_img]:pointer-events-none">
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![蟹肉黑金杯特寫](../images/phaya-asura/crab-delight-close-up.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">蟹肉黑金杯：以金箔點綴，充滿泰式宴客儀式感</figcaption>
+  </figure>
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![香蕉花沙律](../images/phaya-asura/banana-blossom-salad.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">香蕉花沙律：配上大隻虎蝦，酸辣爽脆極開胃</figcaption>
+  </figure>
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![農夫椰芯](../images/phaya-asura/coconut-shoots.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">農夫椰芯：質地如幼筍般爽脆，帶有天然椰香</figcaption>
+  </figure>
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![蝦膏蓮藕莖](../images/phaya-asura/lotus-stems.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">蝦膏蓮藕莖：吸滿濃郁泰式蝦膏，鑊氣十足</figcaption>
+  </figure>
 </div>
 
 ### 🥘 驚艷主菜：火候與香料的完美碰撞
@@ -83,16 +91,24 @@ import RestaurantInfoCard from '@/components/RestaurantInfoCard.astro';
 *   **白豆蔻爆炒牛肉 & 泰式燒澳洲 A5 和牛**：喜歡牛的朋友必試！白豆蔻自帶柑橘微酸與樟木辛香，與鮮嫩牛肉粒猛烈爆炒，多重香氣在口中碰撞。而燒 A5 和牛則烤至完美的粉紅色，肉質軟腍細緻，油脂甘香。
 *   **燒漢來豬肋骨**：選用泰北經典古法咖喱醬料醃製，不加椰奶，突顯天然草本香料風味。豬肋骨經過長時間慢煮，肉質軟嫩得入口即化。
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 [&_img]:rounded-lg [&_img]:shadow-sm [&_img]:!m-0">
-
-  ![生榴槤瑪莎曼咖喱](../images/phaya-asura/durian-massaman-curry.jpg)
-
-  ![羅望子筍殼魚](../images/phaya-asura/crispy-marble-goby.jpg)
-
-  ![白豆蔻爆炒牛肉特寫](../images/phaya-asura/stir-fried-beef-cardamom.jpg)
-
-  ![泰式燒澳洲 A5 和牛](../images/phaya-asura/grilled-wagyu-beef.jpg)
-
+{/* 橫向滑動圖片庫 - 主菜 */}
+<div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 my-6 hide-scrollbar [&_img]:w-full [&_img]:h-auto [&_img]:rounded-lg [&_img]:shadow-sm [&_img]:!m-0 [&_img]:pointer-events-none">
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![切成如麵條般細緻的炒通菜，鑊氣十足](../images/phaya-asura/morning-glory-noodles.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">可能係通菜：切成極幼麵條狀，口感幼嫩爽脆</figcaption>
+  </figure>
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![生榴槤瑪莎曼咖喱](../images/phaya-asura/durian-massaman-curry.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">生榴槤瑪莎曼咖喱：生榴槤慢煮後口感如綿密栗子</figcaption>
+  </figure>
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![羅望子筍殼魚](../images/phaya-asura/crispy-marble-goby.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">羅望子筍殼魚：融入「立鱗燒」技藝，魚鱗金黃香脆</figcaption>
+  </figure>
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![泰式燒澳洲 A5 和牛](../images/phaya-asura/grilled-wagyu-beef.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">泰式燒澳洲 A5 和牛：烤至完美粉紅色，油脂甘香</figcaption>
+  </figure>
 </div>
 
 ### 🍜 湯品與主食：層次豐富的味覺結尾
@@ -100,12 +116,16 @@ import RestaurantInfoCard from '@/components/RestaurantInfoCard.astro';
 *   **撚盡湯 (Ranjuan Soup)**：湯名意為「令人魂牽夢縈的香氣」，是拉瑪五世皇時期的宮廷名菜。以泰國蝦醬、香茅、南薑等熬煮，湯底清澈但色澤深沉，排骨燉得極軟嫩。入口鹹香酸辣，草本香氣久久不散，風味深度令人忘卻冬蔭功。
 *   **泰式乾炒酸辣壽喜燒 & 欖角炒飯**：壽喜燒配上大蝦與魷魚炒得乾身惹味；而欖角炒飯則擺盤豐富，面層鋪滿脆口肉鬆，是極具人氣的飽肚之選。
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 [&_img]:rounded-lg [&_img]:shadow-sm [&_img]:!m-0">
-
-  ![湯底色澤深沉、排骨軟嫩的撚盡湯](../images/phaya-asura/ranjuan-soup.jpg)
-
-  ![炒得乾身惹味的泰式乾炒酸辣壽喜燒](../images/phaya-asura/thai-dry-suki.jpg)
-
+{/* 橫向滑動圖片庫 - 湯與主食 */}
+<div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 my-6 hide-scrollbar [&_img]:w-full [&_img]:h-auto [&_img]:rounded-lg [&_img]:shadow-sm [&_img]:!m-0 [&_img]:pointer-events-none">
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![湯底色澤深沉、排骨軟嫩的撚盡湯](../images/phaya-asura/ranjuan-soup.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">撚盡湯：泰國宮廷名菜，草本香氣與酸辣風味極具層次</figcaption>
+  </figure>
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![炒得乾身惹味的泰式乾炒酸辣壽喜燒](../images/phaya-asura/thai-dry-suki.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">乾炒酸辣壽喜燒：配以海鮮，炒得非常乾身惹味</figcaption>
+  </figure>
 </div>
 
 ### 🍨 甜品：傳統與創新的甜蜜交響
@@ -113,7 +133,17 @@ import RestaurantInfoCard from '@/components/RestaurantInfoCard.astro';
 *   **泰公館椰子真西米露**：連甜品都不隨便！堅持採用泰國南部進口的有機新鮮「真西米」，晶瑩剔透，口感自然煙靭有咬口。配上帶微鹹的香濃椰奶，甜而不膩。
 *   **燒麵包配咖央醬**：烤得外酥內軟的厚切麵包，夾著濃郁的綠色咖央醬與雪糕，冷熱交融的邪惡美味。
 
-![晶瑩剔透且煙靭的泰公館椰子真西米露](../images/phaya-asura/thai-sago-coconut.jpg)
+{/* 橫向滑動圖片庫 - 甜品 */}
+<div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 my-6 hide-scrollbar [&_img]:w-full [&_img]:h-auto [&_img]:rounded-lg [&_img]:shadow-sm [&_img]:!m-0 [&_img]:pointer-events-none">
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![晶瑩剔透且煙靭的泰公館椰子真西米露](../images/phaya-asura/thai-sago-coconut.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">泰公館真西米露：進口有機「真西米」，晶瑩剔透且煙靭</figcaption>
+  </figure>
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![邪惡的燒麵包配咖央醬](../images/phaya-asura/grilled-bread-kaya.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">燒麵包配咖央醬：冰火交融的泰式特色甜品</figcaption>
+  </figure>
+</div>
 
 ---
 
@@ -125,14 +155,20 @@ import RestaurantInfoCard from '@/components/RestaurantInfoCard.astro';
 *   **冬蔭公 (冬薩公) 凍湯 Cocktail**：顛覆視覺之作！酒體完全澄清透明，配上發光杯墊，入口卻真實帶有冬蔭功的酸辣鹹香，火候控制得恰到好處，是非常有趣的刺激體驗。
 *   **泰式奶茶 Cocktail**：將經典泰國國民飲品化身微醺版本，頂層覆蓋綿密奶泡，茶香與酒感的平衡拿捏得極好。
 
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-6 [&_img]:rounded-lg [&_img]:shadow-sm [&_img]:!m-0 [&_img]:object-cover [&_img]:h-full [&_img]:aspect-[4/5]">
-
-  ![Mali kiss 雞尾酒](../images/phaya-asura/mali-kiss-cocktail.jpg)
-
-  ![冬蔭公凍湯 Cocktail](../images/phaya-asura/tom-yum-cocktail.jpg)
-
-  ![綿密奶泡的泰式奶茶 Cocktail](../images/phaya-asura/thai-milk-tea-cocktail.jpg)
-
+{/* 橫向滑動圖片庫 - 飲品 */}
+<div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 my-6 hide-scrollbar [&_img]:w-full [&_img]:h-auto [&_img]:rounded-lg [&_img]:shadow-sm [&_img]:!m-0 [&_img]:pointer-events-none">
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![Mali kiss 雞尾酒](../images/phaya-asura/mali-kiss-cocktail.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">Mali Kiss：帶有茉莉花香與草本氣息，顏值極高</figcaption>
+  </figure>
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![冬蔭公凍湯 Cocktail](../images/phaya-asura/tom-yum-cocktail.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">冬蔭公凍湯 Cocktail：顛覆視覺，入口卻是真實冬蔭功風味</figcaption>
+  </figure>
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![綿密奶泡的泰式奶茶 Cocktail](../images/phaya-asura/thai-milk-tea-cocktail.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">泰式奶茶 Cocktail：經典國民飲品的微醺變奏版</figcaption>
+  </figure>
 </div>
 
 {/* Affiliate 2: 解決餐後住宿/Staycation 需求 (Target: 想在東九龍區渡假的情侶/毛孩家長) */}
