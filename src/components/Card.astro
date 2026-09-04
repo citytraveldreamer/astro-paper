@@ -10,16 +10,12 @@ type Props = {
 } & CollectionEntry<"posts">;
 
 const { variant: Heading = "h2", id, data, filePath } = Astro.props;
-
-// 這裡我們多提取一個 thumbnail 欄位 (稍後要在文章中設定)
 const { title, description, thumbnail, ...props } = data;
 ---
 
 <li class="my-6">
-  {/* 使用 flex 排版，讓文字在左、圖片在右，並保持間距 */}
   <div class="flex items-start gap-4">
-    
-    {/* 左側：文字區塊 (flex-1 讓它佔據剩餘空間) */}
+    {/* 左側：標題與日期 */}
     <div class="flex-1">
       <a
         href={getPostUrl(id, filePath, Astro.currentLocale)}
@@ -34,12 +30,14 @@ const { title, description, thumbnail, ...props } = data;
         </Heading>
       </a>
       <Datetime {...props} />
-      <p>{description}</p>
+      
+      {/* 💻 電腦版簡介：保留原本與縮圖並排的設計 (手機版隱藏) */}
+      <p class="mt-2 hidden sm:block">{description}</p>
     </div>
 
-    {/* 右側：縮圖區塊 (如果該文章有設定 thumbnail 才會顯示) */}
+    {/* 右側：縮圖 */}
     {thumbnail && (
-	<a href={getPostUrl(id, filePath, Astro.currentLocale)} class="flex-shrink-0">
+      <a href={getPostUrl(id, filePath, Astro.currentLocale)} class="flex-shrink-0">
         <Image
           src={thumbnail}
           alt={title}
@@ -47,8 +45,10 @@ const { title, description, thumbnail, ...props } = data;
           height={96}
           class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md hover:opacity-80 transition-opacity"
         />
-      	</a>
+      </a>
     )}
-
   </div>
+
+  {/* 📱 手機版簡介：放在佈局下方，釋放全寬空間 (電腦版隱藏) */}
+  <p class="mt-2 sm:hidden">{description}</p>
 </li>
