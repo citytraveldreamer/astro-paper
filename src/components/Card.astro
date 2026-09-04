@@ -3,6 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import { getPostUrl } from "@/utils/getPostPaths";
 import { toTransitionName } from "@/utils/toTransitionName";
 import Datetime from "./Datetime.astro";
+import { Image } from "astro:assets";
 
 type Props = {
   variant?: "h2" | "h3";
@@ -38,13 +39,15 @@ const { title, description, thumbnail, ...props } = data;
 
     {/* 右側：縮圖區塊 (如果該文章有設定 thumbnail 才會顯示) */}
     {thumbnail && (
-      <a href={getPostUrl(id, filePath, Astro.currentLocale)} class="flex-shrink-0">
-        <img
+	<a href={getPostUrl(id, filePath, Astro.currentLocale)} class="flex-shrink-0">
+        <Image
           src={thumbnail}
           alt={title}
+          width={96}
+          height={96}
           class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md hover:opacity-80 transition-opacity"
         />
-      </a>
+      	</a>
     )}
 
   </div>
