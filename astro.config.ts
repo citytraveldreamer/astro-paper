@@ -35,6 +35,8 @@ const cloudflareRedirects = () => ({
         "# --- Klook ---",
         "/go/klook-esim-hk  https://affiliate.klook.com/redirect?aid=383&aff_adid=1407455&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-HK%2Factivity%2F132216-esim-hong-kong-with-high-speed-and-stable-internet-connection%2F  302",
         "/go/klook-tram  https://affiliate.klook.com/redirect?aid=383&aff_adid=1377806&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-HK%2Factivity%2F765-peak-tram-sky-terrace-hongkong%2F  302",
+        "/go/klook-joypolis  https://affiliate.klook.com/redirect?aid=383&aff_adid=1416034&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-HK%2Factivity%2F137248-joypolis-sports-hong-kong-ticket%2F  302",
+
 
         "# --- GetYourGuide ---",
         "/go/peak-tram-gyg  https://www.getyourguide.com/hong-kong-l174/hongkongpeak-tram-sky-terrace-428-t1340994/?partner_id=13UDXJC&utm_medium=online_publisher&cmp=blog-the-peak-en  302",
@@ -51,6 +53,8 @@ const cloudflareRedirects = () => ({
 
         "# --- Agoda: The Murray ---",
         "/go/murray-hotel-agoda  https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1812007&hl=zh-hk&hid=2728001&ck1=the_peak_post&ck2=editor_tip  302",
+        "# --- Agoda: Dorsett Kai Tak ---",
+        "/go/dorsett-kai-tak-agoda  https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1812007&hl=zh-hk&hid=2728001&ck1=the_peak_post&ck2=editor_tip  302",
 
         "# --- Booking.com: The Murray ---",
         "/go/murray-hotel-en  https://tp.media/r?campaign_id=84&marker=219253&p=2076&sub_id=blog-en&trs=283003&u=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fhk%2Fthe-murray-hong-kong-a-niccolo.html  302",
