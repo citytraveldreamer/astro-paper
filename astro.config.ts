@@ -40,6 +40,8 @@ const cloudflareRedirects = () => ({
 
         "# --- GetYourGuide ---",
         "/go/peak-tram-gyg  https://www.getyourguide.com/hong-kong-l174/hongkongpeak-tram-sky-terrace-428-t1340994/?partner_id=13UDXJC&utm_medium=online_publisher&cmp=blog-the-peak-en  302",
+        "/go/victoria-harbor-cruise-gyg  https://www.getyourguide.com/hong-kong-l174/hong-kong-victoria-harbor-symphony-unlimited-drink-cruise-t194297/?partner_id=13UDXJC&utm_medium=online_publisher  302",
+
         
         "# --- Amazon Peak Design Clip (Blog) ---",
         "/go/peak-design-clip  https://www.amazon.com/Peak-Design-Capture-Camera-Black/dp/B07818LB9D?linkCode=ll2&tag=blog-en-20&linkId=c9c2a5c2575c618634e44ca431b8373b&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl  302",
@@ -60,6 +62,10 @@ const cloudflareRedirects = () => ({
         "/go/murray-hotel-en  https://tp.media/r?campaign_id=84&marker=219253&p=2076&sub_id=blog-en&trs=283003&u=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fhk%2Fthe-murray-hong-kong-a-niccolo.html  302",
         "/go/murray-hotel-zh  https://tp.media/r?campaign_id=84&marker=219253&p=2076&sub_id=blog-zh&trs=283003&u=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fhk%2Fthe-murray-hong-kong-a-niccolo.html  302",
         "/yt/murray-hotel  https://tp.media/r?campaign_id=84&marker=219253&p=2076&sub_id=youtube&trs=283003&u=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fhk%2Fthe-murray-hong-kong-a-niccolo.html  302",
+
+        "# --- Booking.com: Dorsett Kai Tak ---",
+        "/go/dorsett-kaitak-en  https://tp.media/r?campaign_id=84&marker=219253&p=2076&sub_id=blog-en&trs=283003&u=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fhk%2Fdorsett-kai-tak.html  302",
+        "/yt/dorsett-kaitak-en  https://tp.media/r?campaign_id=84&marker=219253&p=2076&sub_id=youtube&trs=283003&u=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fhk%2Fdorsett-kai-tak.html  302",
       ];
       const dest = path.join(fileURLToPath(dir), "_redirects");
       await fs.promises.writeFile(dest, rules.join("\n") + "\n");
