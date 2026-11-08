@@ -125,14 +125,39 @@ import RestaurantInfoCard from '@/components/RestaurantInfoCard.astro';
 
 在「立体派」，精彩的不只有拉麵。餐廳提供多款極具水準的配餐小吃：灑滿七味粉與芝麻的名古屋風味炸雞翼，以及煎得金黃焦脆的日式餃子。配上一瓶清爽解膩的「富士山柚子汽水」，絕對是一頓飯的最美作結。
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 [&_img]:rounded-lg [&_img]:shadow-sm">
-  ![名古屋炸雞翼與煎餃](../images/ramen-cubism/snacks-combo.jpg)
-  ![富士山柚子汽水](../images/ramen-cubism/drink-yuzu-cider.jpg)
+{/* 橫向滑動圖片庫 - 配餐與小吃 */}
+<div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 my-6 hide-scrollbar [&_img]:w-full [&_img]:h-auto [&_img]:rounded-lg [&_img]:shadow-sm [&_img]:!m-0 [&_img]:pointer-events-none">
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![日式煎餃](../images/ramen-cubism/snacks-gyoza.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">煎得金黃焦脆的日式餃子</figcaption>
+  </figure>
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![名古屋炸雞翼與煎餃](../images/ramen-cubism/snacks-combo.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">灑滿七味粉與芝麻的名古屋風味炸雞翼</figcaption>
+  </figure>
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![富士山柚子汽水](../images/ramen-cubism/drink-yuzu-cider.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">清涼解膩的富士川町產柚子汽水</figcaption>
+  </figure>
 </div>
 
 1,200 平方呎的店內空間，以大量原木材質搭配鎢絲吊燈，營造出如家一般溫暖放鬆的氛圍。牆上掛著鮮豔的立體派畫作，在這樣的環境下細味冠軍級職人的手藝，絕對是這個秋天最值得體驗的味覺盛宴。
 
-![立體派畫作與木質吧台](../images/ramen-cubism/interior-bar.jpg)
+{/* 橫向滑動圖片庫 - 餐廳環境 */}
+<div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 my-6 hide-scrollbar [&_img]:w-full [&_img]:h-auto [&_img]:rounded-lg [&_img]:shadow-sm [&_img]:!m-0 [&_img]:pointer-events-none">
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![立體派畫作與木質吧台](../images/ramen-cubism/interior-bar.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">充滿藝術氣息的立體派畫作與木質吧台</figcaption>
+  </figure>
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![舒適的卡座與清酒陳列](../images/ramen-cubism/interior-booth-sake.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">溫暖放鬆的卡座設計與精選清酒陳列</figcaption>
+  </figure>
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![餐廳窗邊座位](../images/ramen-cubism/interior-window.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">透進自然光的玻璃窗邊座位，環境寧靜愜意</figcaption>
+  </figure>
+</div>
 
 {/* Affiliate 3: 中環高質酒店 Staycation (Agoda) */}
 <AffiliateCard 
