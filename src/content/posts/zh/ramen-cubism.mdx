@@ -51,9 +51,16 @@ import RestaurantInfoCard from '@/components/RestaurantInfoCard.astro';
 
 品嚐這碗充滿藝術感的拉麵，強烈建議**先喝一口純粹的泡沫雞白湯**，感受那份鮮甜與微酸醋漬姬松茸的奇妙平衡。接著，**慢慢將中間的黑芝麻忌廉醬拌入湯中**，湯頭瞬間被賦予了濃郁的烘香。配合鹹香的烤香菇、香脆的炸金針菇，以及清新的柚子雞肉，每一口都是截然不同的風景。
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 [&_img]:rounded-lg [&_img]:shadow-sm">
-  ![黑芝麻秋菌濃厚泡沫雞白湯俯視](../images/ramen-cubism/ramen-1-top.jpg)
-  ![夾起掛湯麵條](../images/ramen-cubism/ramen-1-noodle-lift.jpg)
+{/* 橫向滑動圖片庫 - 第一款拉麵特寫 */}
+<div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 my-6 hide-scrollbar [&_img]:w-full [&_img]:h-auto [&_img]:rounded-lg [&_img]:shadow-sm [&_img]:!m-0 [&_img]:pointer-events-none">
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![黑芝麻秋菌濃厚泡沫雞白湯俯視](../../../images/ramen-cubism/ramen-1-top.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">黑芝麻、秋菌與泡沫雞白湯交織的豐富層次</figcaption>
+  </figure>
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![夾起掛湯麵條](../../../images/ramen-cubism/ramen-1-noodle-lift.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">麵條緊緊掛滿濃郁的黑芝麻泡沫湯底</figcaption>
+  </figure>
 </div>
 
 {/* Affiliate 1: 中環周邊景點 (Klook) */}
@@ -91,9 +98,16 @@ import RestaurantInfoCard from '@/components/RestaurantInfoCard.astro';
 
 這碗拉麵集結了帶有果香的豚肉腩片、濃郁赤味噌豚肉醬，以及惹味焦香的炙燒牛腸。**最神來之筆的吃法，莫過於將正中央的雙黃溫泉蛋戳破。** 濃稠的蛋液完美交融，將原本強烈的鹹香轉化為極度柔滑圓潤的口感。夾起麵條時，醬汁緊緊掛在麵上，超級滿足。
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 [&_img]:rounded-lg [&_img]:shadow-sm">
-  ![三重肉盛・溫泉蛋拉麵正面](../images/ramen-cubism/ramen-2-front.jpg)
-  ![夾起掛滿肉醬的麵條](../images/ramen-cubism/ramen-2-noodle-lift.jpg)
+{/* 橫向滑動圖片庫 - 第二款拉麵特寫 */}
+<div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 my-6 hide-scrollbar [&_img]:w-full [&_img]:h-auto [&_img]:rounded-lg [&_img]:shadow-sm [&_img]:!m-0 [&_img]:pointer-events-none">
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![三重肉盛・溫泉蛋拉麵正面](../../../images/ramen-cubism/ramen-2-front.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">三重肉盛・溫泉蛋拉麵，滿滿的惹味肉香</figcaption>
+  </figure>
+  <figure class="snap-center shrink-0 w-[85%] sm:w-80 m-0 flex flex-col">
+    ![夾起掛滿肉醬的麵條](../../../images/ramen-cubism/ramen-2-noodle-lift.jpg)
+    <figcaption class="text-center text-sm text-muted-foreground mt-3 italic">戳破溫泉蛋拌勻，麵條掛滿柔滑圓潤的肉醬</figcaption>
+  </figure>
 </div>
 
 {/* Affiliate 2: 海外旅客必備 eSIM (KKday) */}
